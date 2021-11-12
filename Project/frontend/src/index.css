@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/background.jpg");
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav{
+  position: fixed;
+  top: 0%;
+}
+i{
+  font-family: 'font-awesome';
+  color:rgb(0, 153, 255);
+  font-weight: 100;
+  cursor: pointer;
+}
+button
+{
+  border:none;
+  padding:0px;
+  background:none
+}
+.login-box , .register-box{
+
+  height: 400px;
+  width: 40vw;
+  box-shadow: 0px 2px 10px #000;
+  border-radius: 20px;
+  /* background-color: aquamarine; */
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.register-box {
+  height: 450px;
+}
+@media screen and (max-width:780px) {
+    .login-box{
+      width: 80vw;
+      height: 60vh;
+    }
+}
+.login-box h1 ,.register-box h1{
+  text-align: center;
+  color:#fff;
+  background-color: rgb(0, 140, 255);
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px 0px;
+}
+.login-box form ,.register-box form {
+  padding: 20px 15px;
+}
+.login-box form input ,.register-box form input {
+  /* background:transparent;
+  border: none;
+  border-bottom: 1px solid #fff; */
+}
+.login-box form input :-moz-placeholder ,.register-box form input :-moz-placeholder {
+  color: #fff;
+} 
+.addNote input{
+    border: none;
+     border-bottom: 2px solid rgb(0,0,0);
+    background: transparent;
+    border-radius: 0;
+    color: #000;
+  }
+  .addNote input:focus{
+    color:#fff; 
+    background:#0005;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  .card{
+    transition: 0.3s;
+  }
+  .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
